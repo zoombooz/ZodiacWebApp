@@ -16,6 +16,7 @@ export default function BirthdateForm(){
         setDay("")
         setMonth("")
         setYear("")
+        zodiac.setZodiac("")
     }
 
     function handleSubmit(e){
@@ -71,7 +72,7 @@ export default function BirthdateForm(){
 
     return (
     <div className="p-8 w-1/2 bg-gray-100">
-        <form onSubmit={handleSubmit}>
+        <form>
             <div className="flex">
                 <label htmlFor="name" className="w-1/2 text-lg font-medium text-gray-700"> Nama :</label>
                 <input
@@ -115,7 +116,7 @@ export default function BirthdateForm(){
                 </div>
             </div>
             <div className="flex mt-4">
-                <button type="submit" className="p-2 bg-gray-400 w-1/2 hover:bg-gray-500">Submit</button>
+                <button onClick={handleSubmit} type="submit" className="p-2 bg-gray-400 w-1/2 hover:bg-gray-500">Submit</button>
                 <button onClick={reset} className="bg-gray-300 p-2 w-1/2 hover:bg-gray-400">Reset</button>
             </div>
         </form>

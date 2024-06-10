@@ -10,7 +10,7 @@ import {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div className='h-full'><App /></div>,
+    element: <App />,
   },
 ]);
 
