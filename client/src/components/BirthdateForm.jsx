@@ -11,7 +11,8 @@ export default function BirthdateForm(){
 
     const zodiac = useContext(ZodiacContext)
 
-    function reset(){
+    function reset(e){
+        e.preventDefault()
         setName("")
         setDay("")
         setMonth("")
